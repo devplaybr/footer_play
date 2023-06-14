@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -- Feature Footer (HTML+CSS) = Footer_Play/Version: 0.0.1 -© 2023 All rights reserved Devplaybr 
+ -- obs: Na integração do código deve muda-lo (section-footer) */
+html, 
+body,
+section {
+    height: 100%;
+    width: 100%;
+    background:#323b60;
+    
+}
+  
+footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 30px;
+    color: #a2b5cd;
+}
+
+footer.top {
+    border-bottom: 2px solid #3a4f6a;
+    padding-bottom: 20px;
+}
+
+.logo {
+    height: 380px;
+    width: 380px;
+}
+
+footer > img {
+    margin-top: 10px;
+}
+
+footer.top .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+  
+.links > div {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+  
+footer h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f7f7f7;
+} 
+  
+footer.bottom {
+    padding: 20px 0;
+    justify-content: space-between;
+}
+    
+.direitos {
+    font-size: 12px;
+}
+  
+.direitos > a {
+    margin: 0 4px;
+}
+  
+.direitos > span {
+    margin-right: 10px;
+}
+  
+footer.bottom .links {
+    display: flex;
+    gap: 18px;
+}
+  
+footer.bottom .links > a {
+    font-size: 24px;
+}
+  
+
+/* -- Responsividade. -- */
+
+@media (width < 420px) {
+    footer {
+      text-align: center;
+      align-items: center;
+    }
+  
+    footer.top .links {
+      grid-template-columns: 1fr;
+      margin-bottom: 3rem;
+    }
+  
+    footer.bottom {
+      align-items: center;
+    }
+  
+    .direitos > span {
+      display: block;
+      margin: 2px 0;
+      
+    }
+}
+
+@media (width < 620px) {
+    footer {
+      flex-direction:column;
+      margin: 0 40px;
+    }
+  
+    footer.bottom {
+      gap: 16px;
+      flex-direction:column-reverse;
+    }
+}
+
+@media (width < 920px) {
+    footer {
+      margin: 0 40px;  
+      max-width: 800px;
+      padding: 0;
+    }
+    .links > div {  
+        margin: 7rem 0 auto;
+    }
+}
+
+@media (width >= 920px) {
+    footer {
+      margin: 0 40px;
+      max-width: 100%;
+      padding: 0;
+    }
+    .links > div {
+        margin: 7rem;
+    }
+}
